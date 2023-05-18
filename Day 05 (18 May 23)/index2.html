@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+    <form>
+        <h3>Complex Form</h3>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" placeholder="enter your name" class="name" name="name" value="">
+
+            <label for="email">Email</label>
+            <input type="text" placeholder="enter your email" class="email" name="email" value="">
+
+            <label for="phone">Phone</label>
+            <input type="tel" placeholder="enter your phone" class="phone" name="phone" value="">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="name" name="dob" value="">
+
+            <label for="gender">Genser</label>
+            <input type="radio" value="male" class="male" name="gender">Male
+            <input type="radio" value="female" class="female" name="gender">Female
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="">--Please Choose an Option--</option>
+                <option value="uk">U.K.</option>
+                <option value="ind">INDIA</option>
+                <option value="usa">U.S.A</option>
+            </select>
+        </fieldset><br>
+        <fieldset>
+            <legend>Address</legend>
+            <label for="street">Street</label>
+            <input type="text" value="" class="street" name="street">
+
+            <label for="city">City</label>
+            <input type="text" value="" class="city" name="city">
+
+            <label for="state">State</label>
+            <input type="text" value="" class="state" name="state">
+
+            <label for="zipcode">Zipcode</label>
+            <input type="text" value="" class="zipcode" name="zipcode">
+        </fieldset><br>
+        <fieldset>
+            <legend>Others Information</legend>
+            <label for="comment">Comments</label><br>
+            <textarea name="comment" id="comment" cols="80" rows="10"></textarea><br>
+
+            <label for="term">I agree to term and services</label>
+            <input type="checkbox" value="term" class="term" name="term">
+        </fieldset><br>
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+</html>

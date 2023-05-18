@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <div class="form register_frm">
+        <h3>Event Register</h3>
+        <form>
+            <div class="frm">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="enter your name" class="name" name="name" value="">
+            </div><br>
+            <div class="frm">
+                <label for="email">Email</label><br>
+                <input type="text" placeholder="enter your email" class="email" name="email" value="">
+            </div><br>
+            <div class="frm">
+                <label for="phone">Phone</label><br>
+                <input type="tel" pattern="" placeholder="enter your phone" class="phone" name="phone" value="">
+            </div><br>
+            <div class="frm">
+                <label for="occupation">Occupation</label><br>
+                <select name="occupation" id="">
+                    <option value="">Others</option>
+                    <option value="">Student</option>
+                    <option value="">Professional</option>
+                </select>
+            </div><br>
+            <div class="frm">
+                <fieldset style="display: inline;">
+                    <legend for="interest">Topic of Interest</legend>
+                    <input type="checkbox" value="html" class="html" name="interest">HTML
+                    <input type="checkbox" value="css" class="css" name="interest">CSS
+                    <input type="checkbox" value="javaScript" class="js" name="interest">JavaScript
+                </fieldset>
+            </div><br>
+            <div class="frm">
+                <fieldset style="display: inline;">
+                    <legend for="comment">Comments</legend>
+                    <textarea name="comment" id="comment" class="comment" cols="50" rows="5" placeholder="comments here"></textarea>
+                </fieldset>
+            </div><br>
+            <div class="frm">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
