@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    font-size: 34px;
+
+}
+.box{
+    /* font-size: 12px; */
+    font-size: 2em; /*2em= 34*2*/
+    /*font-size: 2rem;*/ /* 2rem= 2*default font-size of html tag, i.e. 16px*/
+}
+
+
+.container2{
+    font-size: 20px;
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+.box1{
+    height: 50vh;
+    width: 50vw;
+    background-color: lightgreen;
+    
+
+}
+.box2{
+    height: 50vh;
+    width: 50vw;
+    background-color: lightsalmon;
+    
+}
