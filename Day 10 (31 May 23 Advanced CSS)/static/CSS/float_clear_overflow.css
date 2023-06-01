@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#overflow{
+    width: 40vw;
+    height: 40vh;
+    background-color: antiquewhite;
+    overflow: auto;
+}
+
+#float{
+    width: 100%;
+    height: 50vh;
+    background-color: aqua;
+}
+.child1{
+    width: 100px;
+    height: 75px;
+    background-color: black;
+    float: left;
+}
+.child2{
+    width: 100px;
+    height: 75px;
+    background-color: rgb(115, 255, 0);
+    float: left;
+}
+.child3{
+    width: 100px;
+    height: 75px;
+    background-color: rgb(255, 0, 255);
+    float: left;
+    clear: both;
+}

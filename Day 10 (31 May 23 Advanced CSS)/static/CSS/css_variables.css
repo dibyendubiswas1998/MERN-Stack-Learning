@@ -1,0 +1,50 @@
+:root{
+    --primary-text-color: rgb(255, 0, 170);
+    --secondary-text-color: rgb(151, 0, 0);
+    --default-background-color: rgb(202, 199, 199);
+    --default-padding: 20px;
+    --default-matgin: 20px;
+    --default-border-radius: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    padding: var(--default-padding);
+    background-color: azure;
+}
+.dark{
+    /* try to override the default properties using class */
+    --primary-text-color: rgb(0, 139, 63);
+    --secondary-text-color: rgb(247, 0, 214);
+    --default-background-color: rgb(223, 167, 167);
+}
+.container h1{
+    text-align: center;
+    /* background-color: red; */
+}
+.box{
+    --my-var: rgb(180, 255, 130);
+    padding: var(--default-padding);
+    /* background-color: antiquewhite; */
+    /* background-color: var(--my-var); */
+    background-color: var(--default-background-color);
+    margin-block: var(--default-matgin);
+    border-radius: var(--default-border-radius);
+}
+.box h2{
+    margin-bottom: var(--default-matgin);
+    /* background-color: var(--my-var); */
+    /* color: var(--primary-text-color); */
+}
+
+@media screen and (min-width: 800px) {
+    .box{
+        --my-var: pink;
+    }
+}
+

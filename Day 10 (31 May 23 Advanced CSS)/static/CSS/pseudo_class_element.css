@@ -1,0 +1,45 @@
+
+
+
+.container a:link{
+    color: green;   
+}
+.container a:visited{
+    color: brown;
+}
+.container a:hover{
+    color: red;
+}
+.container a:active{
+    background-color: aqua;
+}
+
+
+/* 
+ul li:first-child{
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+ul li:last-child{
+    background-color: yellowgreen;
+} */
+
+ul li:nth-child(2n){
+    background-color: violet;
+}
+
+h1::first-letter{
+    color: blue;
+    font-size: 40px;
+}
+::selection{
+    background-color: black;
+    color: yellow;
+}
+
+h3::before{
+    content: 'Any ';
+}
+h3::after{
+    content: ', get out form here!';
+}
