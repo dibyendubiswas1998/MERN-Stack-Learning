@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signup{
+    background: linear-gradient(171deg, #0000bf, #a303a6);
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+#signup form .title{
+    color: antiquewhite;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#signup form .title::before{
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: 100%;
+    height: 3px;
+    width: 60%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+#signup form .input-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#signup form .input-details .input-box{
+    margin: 15px 0px 15px 0px;
+    width: calc(100%/2 -20px);
+}
+#signup form .input-details .input-box label{
+    color: antiquewhite;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+#signup form .input-details .input-box input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    color: beige;
+    letter-spacing: 1px;
+}
+#signup form .input-details .input-box input:focus,
+#signup form .input-details .input-box input:valid{
+    border-color: #bda4b7;
+}
+
+#signup form .input-details .input-box input::-webkit-input-placeholder{
+    color: beige;
+    font-size: 12px;
+}
+#signup form .button{
+    height: 35px;
+    width: 100px;
+    margin: 10px 0px;
+}
+#signup form .button button{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #00ff6a, #ff0095);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#signup form .button button:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+
+@media (max-width: 500px){
+    #signup{
+        width: 100%;
+    }
+    #signup form .input-details .input-box{
+        margin-top: 15px;
+        width: 97%;
+    }
+    #signup form{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+

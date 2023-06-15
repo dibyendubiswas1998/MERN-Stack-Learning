@@ -1,0 +1,114 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+body{
+    height: 100vh;
+    background-color: #000;
+    background-image: url("../Img/img1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+header .navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+header .navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header .navbar .links{
+    display: flex;
+    gap: 3rem;
+}
+header .navbar .action_btn{
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    /* font-size: 0.8rem; */
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+
+
+header .navbar .links li a:hover,
+header .navbar .action_btn:hover{
+    scale: 1.05;
+}
+header .navbar .action_btn:active{
+    scale: 0.95;
+}
+/* Dropdown Menu */
+header .navbar .dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 50px;
+    width: 300px;
+    background-color: rgba(252, 246, 225, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+header .navbar .dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navbar .dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Responsive */
+@media (max-width: 992px){
+    header .navbar .links,
+    header .navbar .action_btn{
+        display: none;
+    }
+    header .navbar .toggle_btn{
+        display: block;
+    }
+    header .navbar .dropdown_menu{
+        display: block;
+    }
+}
+@media (max-width: 500px){
+    header .navbar .dropdown_menu{
+        display: block;
+        width: 85%;
+    }
+}
+@media (max-width: 300px){
+    *{
+        font-size: 0.8rem;
+    }
+    header .navbar .dropdown_menu{
+        top: 60px;
+    }
+}
